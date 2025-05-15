@@ -1,0 +1,1324 @@
+//import logo from './6.jpg';
+//import './App.css';
+/*
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+export default App;
+*/
+//------------------------------2.modify default project---------------------------------------------
+/*function App()
+{
+  return <h1>welcome to header1</h1>
+}
+export default App;*/
+//----------------------------3. Adding multiple HTML tags -------------------------------
+/*function App()
+{
+return(
+<>
+<h1>this is header 1</h1>
+<h2>this is header 2</h2>
+<h3>this is header 1</h3>
+<h4>this is header 1</h4>
+<h5>this is header 1</h5>
+</>)
+}
+export default App;*/
+//----------------------------4.how to use var const let? --------------------------
+/*function App()
+{
+var k1=20;
+var k2=30;
+return(
+  <div>
+    <h1>Usage of variable in React</h1>
+    <h2>Number one: {k1}</h2>
+    <h2>Number two: {k2}</h2>
+    <h2>Total     : {k1+k2}</h2>
+  </div>
+)
+}
+export default App;*/
+//----------- 5. how to use nested/multiple components in single view -----------------
+/*function TopView()
+{
+  return(
+    <div>
+        <h1>This is top view </h1>        
+    </div>
+  )
+}
+function BottomView()
+{
+  return(
+    <>
+      <h2>This is Bottom View</h2>
+    </>
+  )
+}
+function App()
+{
+  return(
+    <>
+      <TopView/>
+      <BottomView/>
+    </>
+  )
+}
+export default App;*/
+// ---------------------6.how to use class componets -----------------------
+
+/*import React from "react";
+class App extends React.Component
+{
+  render(){
+    return <h2>classs component</h2>
+  }
+}
+export default App;*/
+
+//---------------------------7. how use multi tag in clsss----------
+/*import React from "react";
+class App extends React.Component
+{ 
+   
+  render(){
+    var k1=33;
+    var k2=44;
+    var k3;
+    k3=k1+k2  
+    return(
+        <>
+          
+          <h2>classs component Number 1:{k1}</h2>
+          <h2>classs component Number 2:{k2}</h2>
+          <h2>classs component total : {k3}</h2>
+          </>
+    )
+  }
+}
+export default App;*/
+//----------------------------8 combine class -----------------------
+/*
+import React from "react"
+class Test extends React.Component
+{  
+  render()  
+  {
+    var s1=100;
+    var s2=200;
+    return(
+      <>
+       <h1>This is base class {s1}</h1>
+       <h1>This is base class {s2}</h1>
+       <hr size="49" color="blue"></hr>
+       </>
+    )
+  }
+}
+
+class App extends Test
+{
+  render()
+  {
+    return( 
+      <>
+      <Test/>
+    <h2> This is derive classs</h2> 
+    
+    </>
+    )
+  }
+}
+export default App;
+*/
+// -----------------9. changing default App(Component) name into your own name-----------------
+/*
+import React from 'react'
+class Gowtham extends React.Component
+{
+  render()
+  {
+    return <h1>Welcome To React </h1>
+  }
+}
+export default Gowtham;
+*/
+// --------------- 10. using function type-1 (basic - model)-----------------
+/*import React from 'react'
+class Gowtham extends React.Component
+{
+  render()
+  {
+    function pradeep()
+    {
+      return "this is normal function";
+    }
+    return(
+      <>
+      <h1>Function Demo</h1>
+      <h2>{pradeep()}</h2>
+      </>
+    )
+  }
+}
+export default Gowtham;*/
+// ----------------------- 11. using function type 2 old model------------ 
+/*
+import React from "react";
+class Gowtham extends React.Component
+{
+  render()
+  {
+    let pradeep=function()
+    {
+      return "this is function old model";
+    }
+    return(
+      <>
+      <h1>This is function type 2</h1>
+        <h2>{pradeep()}</h2>      
+      </>
+    );
+    
+  }
+}
+export default Gowtham;*/
+//---------------------------------12. using function type 3 with arg----------
+/*import React from "react";
+class Gowtham extends React.Component
+{
+  render()
+  {
+    let pradeep=function(a,b)
+    {
+      return "this is function with arg or parameter --->"+(a+b);
+    }
+    return(
+      <>
+      <h1>This is function type 3 with arguments</h1>
+        <h2>Result: {pradeep(11,33)}</h2>      
+      </>
+    );
+    
+  }
+}
+export default Gowtham;
+*/
+//---------------------------------13. using Arrow function without arg----------
+/*import React from 'react'
+class Gowtham extends React.Component
+{
+  render()
+  {
+    const show=()=>
+    {
+      return "This is arrow function result";
+    }
+    return( 
+    <>
+    <h1>This is arrow function.</h1> 
+    <h2>Answer: {show()}</h2>
+    </>
+    )
+  }
+}
+export default Gowtham;*/
+// --------------------------14 .arrow function using with arguments----------------------
+
+/*import React from 'react'
+class Gowtham extends React.Component
+{
+  render()
+  {
+    const show=(a,b,c)=>
+    {
+      return "This is arrow function with arg:"+(a+b+c);
+    }
+    return( 
+    <>
+    <h1>This is arrow function.</h1> 
+    <h2>Answer: {show(11,22,33)}</h2>
+    </>
+    )
+  }
+}
+export default Gowtham;*/
+// --------------------------14 .arrow function without using parenthesis()----------------
+/*import React from 'react'
+class Gowtham extends React.Component
+{
+  render()
+  {
+    const show=a=>
+    {
+      return "This is arrow function with arg:"+(a*15);
+    }
+    return( 
+    <>
+    <h1>This is arrow function.</h1> 
+    <h2>Answer: {show(11)}</h2>
+    </>
+    )
+  }
+}
+export default Gowtham;*/
+//----------------15. using array basic model -------------------
+/*function Gowtham()
+{
+  const myarr=[11,22,33,44,55,66,77];
+  return(
+    <>
+    <h1>Array Concepts</h1>
+    <h3>Array index : 0 ---&gt; {myarr[0]}</h3>
+    <h3>Array index : 1 ---&gt; {myarr[1]}</h3>
+    <h3>Array index : 2 ---&gt; {myarr[2]}</h3>
+    <h3>Array index : 3 ---&gt; {myarr[3]}</h3>
+    <h3>Array index : 4 ---&gt; {myarr[4]}</h3>
+    <h3>Array index : 5 ---&gt; {myarr[5]}</h3>
+    <h3>Array index : 6 ---&gt; {myarr[6]}</h3>
+    <h3>Array index : 7 ---&gt; {myarr[7]}</h3>  
+    </>
+  )
+}
+export default Gowtham;*/
+
+//---------------------------------16. hw : sum of array
+/*function Gowtham()
+{
+  const myarr=[11,22,33,44,55,66,77,92];
+  var s=0
+  const sumfun=()=>
+  {
+    var len=myarr.length;
+    //return "Length of array:"+len;
+    for(var i=0;i<len;i++)
+    {
+      s=s+myarr[i];
+    }
+    return "Sum of array:"+s;
+  }
+  return(
+    <>
+    <h1>Sum of Array</h1>
+    <h3> Sum of Array ============&gt; {sumfun()}</h3>  
+    </>
+  )
+}
+export default Gowtham;
+*/
+//------------------------17.how to use map method in an array---------------
+/*function Gowtham()
+{
+  const myarr=[11,22,33,44,55,66,77,92];
+  return(
+    <>
+    <h1>Display Array Values:</h1>
+    <h1>{myarr.map(v=>v)}</h1>
+    <hr></hr>
+    <h1>{myarr.map(v=>v+" ")}</h1>
+    <hr></hr>
+    {myarr.map((item)=><h2>{(item)}</h2>)}
+    </>
+  )
+}
+export default Gowtham;*/
+// ---------------------------18.destructing array ----------------------------
+/*function Gowtham()
+{
+  const myarr=["one","two","three","four","five","six"]
+  const [v1,v2,,,,v3]=myarr
+  return(
+    <>
+    <h3>{v1}</h3>
+    <h3>{v2}</h3>
+    <h3>{v3}</h3>
+    </>
+  )
+}
+export default Gowtham*/
+//---------------------- 19. destructing array using function return----------------
+/*function Gowtham()
+{
+  const myfun=(a,b)=>
+  {
+    const plus=a+b
+    const subtraction=a-b
+    const multiplication=a*b
+    const div=a/b
+    return [plus,subtraction,multiplication,div]
+  }
+
+  const [add,sub,,div]=myfun(10,2)
+
+  return(
+    <>
+  <h1> Addition {add}</h1>
+  <h1> Subtraction {sub}</h1>
+  <h1> Multiplication </h1>
+  <h1> Division {div}</h1>
+    </>
+  )
+}
+export default Gowtham*/
+// ----------------------------20.Destructing object + return array------------------
+/*function Gowtham()
+{
+  const mydetails={
+    rno:1001,
+    name:"gowthaman",
+    tamil:88,
+    english:88,
+    maths:100
+  }
+  const myfun=({rno,name,tamil,english,maths})=>
+  {
+    return [rno,name,tamil,english,maths]
+  }
+  const [r,n,t,e,m]=myfun(mydetails)
+
+  return(
+    <>
+    <h1>Roll Number:{r}</h1>
+    <h1>Student Name:{n}</h1>
+    <h1>Tamil:{t}</h1>
+    <h1>English:{e}</h1>
+    <h1>Maths:{m}</h1>
+    </>
+  )
+}
+export default Gowtham*/
+// ------------------------ 21. Destructing Nested Object and return array--------------
+function Gowtham()
+{
+  const mydetails={
+    rno:1001,
+    name:"gowthaman",
+    marks:{
+            tamil:88,
+            english:98,
+            maths:100
+          }
+  }
+  // ragul idea
+/*  const myfun=({rno,name,marks:{tamil},marks:{english},marks:{maths}})=>
+  {
+    return [rno,name,tamil,english,maths]
+  }
+  */
+ // gowtham idea
+ const myfun=({rno,name,marks})=>
+ {
+  return [rno,name,marks.tamil,marks.english,marks.maths]
+ }
+  const [r,n,t,e,m]=myfun(mydetails)
+
+  return(
+    <>
+    <h1>Roll Number:{r}</h1>
+    <h1>Student Name:{n}</h1>
+    <h1>Tamil:{t}</h1>
+    <h1>English:{e}</h1>
+    <h1>Maths:{m}</h1>
+    </>
+  )
+}
+export default Gowtham
+*/
+//----------------------22. spread opeator(...) Basic ..........................
+/*function Gowtham()
+{
+  const arr1=[11,22,33,44]
+  const arr2=[44,55,66,77]
+
+  const comarr=[...arr1,...arr2]
+  return(
+    <>
+    <h1>Array 1 {arr1}</h1>
+    <h1>Array 2 {arr2}</h1>
+    <h1>Combine Array: {comarr}</h1>
+    </>
+  )
+}
+export default Gowtham
+*/
+//----------------------- 23. spread operator with destructive array.............
+/*function Gowtham()
+{
+  const arr1=[11,22,33,44,66,77,88,99]
+  
+  const [a1,a2,...a3]=arr1
+  return(
+    <>
+    <h1>Array at index 0 : {a1}</h1>
+    <h1>Array at index 1 : {a2}</h1>
+    <h1>Array at index 2 onwards : {a3}</h1>
+    </>
+  )
+}
+export default Gowtham*/
+//---------------------- 24.Spread operator using object-------------------------
+/*
+function Gowtham()
+{
+const obj1={
+    rno:1001,
+    name:"raja",
+    mark:10
+}
+const obj2={
+  rno:1001,
+  name:"raja",
+  mark:100
+}
+const comobj={...obj1,...obj2}    // key must be unique
+                                  // if same key is found at both object
+                                  // it will take last object key & value
+return(
+  <>
+    <h1>  Object1 :  {obj1.rno} {obj1.name} {obj1.mark}</h1>
+    <h1>  Object2 :  {obj2.rno} {obj2.name} {obj2.mark}</h1>
+    <h1>{comobj.rno}</h1>
+    <h1>{comobj.name}</h1>
+    <h1>{comobj.mark}</h1>    
+  </>
+)
+}
+export default Gowtham
+*/
+// ------------------25. modules (use: global variable)------------------
+// global variables: we can access anywhere in the project--------------
+// step 1: module create (Ragul.js--> src--> right click-->new file)
+/*import {name,rno} from './Ragul'
+function Gowtham()
+{
+  return(
+    <>
+    <h1>Roll number : {rno}</h1>
+    <h1>Name        : {name}</h1>
+    </>
+  )
+}
+export default Gowtham*/
+
+//------------------- 26. packages --> collection of moudles (.js files)-----------
+/*
+import { mymark,myname,mynative } from "./mymodules/File1";
+import FunComponent from "./mymodules/File2";
+function Gowtham()
+{
+  return(
+    <>
+      <h1>file 1 from mymodules</h1>
+      <h1>my name : {myname}</h1>
+      <h1>my mark  : {mymark}</h1>
+      <h1>my native : {mynative}</h1>
+      <hr></hr>
+      <h1>file 2 from mymodules</h1>
+      <FunComponent/>
+      <hr></hr>      
+    </>
+  )
+}
+export default Gowtham*/
+//---------------------------- 27. Ternary operatio or conditional operator-----------
+// ------------------------------- using modules and packages-------------------------
+// steps: folder create --> insert 2 files 1 .fun comp 2. class comp------------------
+/*
+import FunComponent from "./mymodules/File2";
+import ClassComp from "./mymodules/File3";
+function Gowtham()
+{
+  let isLogin=true
+  let result= isLogin ? <FunComponent/> : <ClassComp/>
+  return(
+    <>
+    {result}
+    </>
+  )
+}
+export default Gowtham*/
+//---------------------------28. ternary operator greatest among 2 no's--------
+/*function Gowtham()
+{
+  var a=88
+  var b=144
+  var c=a>b ?  a : b
+  return(
+    <>
+    <h1>Biggest number:{c}</h1>
+    </>
+  )
+}
+export default Gowtham*/
+//---------------------------29. ternary operator greatest among 3 no's--------
+/*function Gowtham()
+{
+  var a=3388
+  var b=1444
+  var c=874
+  var d=(a>b && a>c) ? a : (b>c?b:c)
+  return(
+    <>
+    <h1>Biggest number:{d}</h1>
+    </>
+  )
+}
+export default Gowtham*/
+// //------------------- 30. if statements ------------------------------------
+/*function Gowtham()
+{
+  var res="Fail"
+  let mark=49
+  if (mark>49)
+      var res="Pass"
+  return(
+    <>
+      <h1>Result:</h1>
+      <h1>{res}</h1>      
+    </>
+  )
+  
+}
+export default Gowtham*/
+//------------------------31.properties : react:props keyword-----------------------------
+// use:  like function arguments or parameters
+/*  syntax:(index.js)
+    <component_name propertyname=value />
+    syntax:(App.js)
+    function Gowtham(props)
+    {
+      return(
+        {props.propertyname}
+      )
+    }
+
+*/
+function Gowtham(props)
+{
+  return(
+    <>
+      <h1>Arguments or Parameter Passing</h1>
+      <h2>Your Mark:{props.mark}</h2>
+    </>
+  )
+}
+export default Gowtham
+
+//------------------------------------------------32. props using object + nested object -----------------------------
+
+function App(props)
+{
+  return( 
+    <>  
+      <h1> Roll number: {props.data.sno}</h1>
+      <h1> Name       : {props.data.sname}</h1>
+      <h1> address       : {props.data.address}</h1>
+      <h1> phone       : {props.data.ph}</h1>
+      <h1> bloodgroup  : {props.data.bloodgroup}</h1>
+      <h1> nickname       : {props.data.nickname}</h1>
+
+    </>    
+    )
+}
+export default App*/
+import React from "react";
+class App extends React.Component
+{
+   constructor(props)
+   {
+    super(props)
+   }
+  render()
+  {
+    return(
+      <>
+        <h1>Roll number   : {this.props.data.rno}</h1>  
+        <h1>Student name  : {this.props.data.name}</h1>  
+        <h1>Tamil         : {this.props.data.marks.tamil}</h1>  
+        <h1>English       : {this.props.data.marks.english}</h1>  
+        <h1>Maths         : {this.props.data.marks.maths}</h1>          
+        </>
+    )
+  }
+}
+export default App
+
+index.js
+----------
+import ReactDOM from 'react-dom/client';
+const mydetails={
+  rno:1001,
+  name:'ragul',
+  marks:{
+      tamil:88,
+      english:99,
+      maths:44
+  }
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<App data={mydetails}></App>)
+
+
+/----------------------------------------37. react state --------------
+// this.state is inbuit object(json)
+/*
+import React from 'react'
+class App extends React.Component
+{
+  constructor(props)
+  {
+    super(props)
+    this.state={
+      sno:1,
+      sname:'gokulnath',
+      mark:{
+        tamil:89,
+        english:88,
+        maths:100
+      }
+    }
+  }
+render()
+{
+  return(
+    <>
+     <h1> serial number :{this.state.sno}</h1>
+     <h1> Student Name: {this.state.sname}</h1>
+     <h1>Student tamil mark : {this.state.mark.tamil}</h1> 
+     <h1>Student english mark : {this.state.mark.english}</h1> 
+     <h1>Student maths   mark : {this.state.mark.maths}</h1> 
+    </>
+  )
+}
+}
+export default App
+*/
+//--------------38 changing the state object ----------------------------------------
+//------------- this.setState is used to change the object values---------------------
+/*
+import React from 'react'
+class App extends React.Component
+{
+  constructor(props)
+  {
+    super(props)
+    this.state={
+      rno:1001,
+      sname:'pradeep',
+      mark:10
+    }
+  }
+  
+  render()
+  {
+    const changeMark=()=>{
+      //alert('test')
+      this.setState({mark:100})
+    }
+    return(
+      <>
+        <h1>Roll number : {this.state.rno}</h1>
+        <h1>Student name: {this.state.sname}</h1>
+        <h1>Mark        : {this.state.mark}</h1>
+        {/*<h1>{changeMark()}</h1>*//*}
+    <button onClick={changeMark}>Click Me Change Mark</button>
+      </>
+    )
+  }
+}
+export default App
+*/
+
+//--------------------------39.life cycle of react components --------------------
+// 3 types.   1.mounting 2. updating 3. unmounting-------------------------------
+// 1.mounting:     1.constructor 2.getdrivedstatefromprops(remmoved)3.render 4. componentdidmount
+/*
+import React from 'react'
+class App extends React.Component
+{
+  constructor(props)    // auto call (1st)
+  {
+    super(props)
+    this.state={
+      rno:1001,
+      sname:'raja',
+      mark:100
+    }
+   }
+   shouldComponentUpdate()
+   {
+    return true;
+   }
+   componentDidUpdate(){
+    document.getElementById("amark").innerHTML=this.state.mark
+    document.getElementById("aname").innerHTML=this.state.sname
+   } 
+   getSnapshotBeforeUpdate(prevProps,prevState)
+   {    
+    document.getElementById("bmark").innerHTML=prevState.mark
+    document.getElementById("bname").innerHTML=prevState.sname
+   }
+
+   componentDidMount(){
+    setTimeout(()=>{this.setState({sname:'gokul',mark:35})},4000)
+   }
+   /*
+  componentDidMount() {      // auto call (3rd time)
+    setTimeout(() => {
+      this.setState({mark:0})
+    }, 5000)
+  }*/
+  /*
+  render()            //  2nd time index.js  <App/>
+  {
+      return(
+        <>
+          <h1> this is render method </h1>
+          <h2>roll no:{this.state.rno}</h2>
+          <h2>name   :{this.state.sname}</h2>
+          <h2>mark   :{this.state.mark}</h2>
+          
+          before update Mark:<span id="bmark"></span><br/>
+          before updat Name:<span id="bname"></span><br/>
+          after update Mark:<span id="amark"></span><br/>
+          after update Name:<span id="aname"></span><br/>
+                   
+        </>
+      )
+  }
+}
+export default App
+// ...................2.updating.............................
+/*
+getDerivedStateFromProps()----------> removed
+shouldComponentUpdate()
+render()
+getSnapshotBeforeUpdate()
+componentDidUpdate()
+*/ 
+
+//------------------3.unmounting.................................
+//1. componentWillUnmount ---------> remove / delete values
+/*
+import React from 'react'
+class Child extends React.Component
+{
+componentWillUnmount()
+{
+  alert("component removed")
+}
+
+  render()
+  {
+    return(
+      <>
+      <h1> This is child class</h1>
+      <h1> This is child class</h1>
+      <h1> This is child class</h1>
+      <h1> This is child class</h1>
+      </>
+    )
+  }
+}
+class App extends Child
+{
+  constructor(props)
+  {
+    super(props)
+    this.state={
+      show:true
+    }
+  }
+  render()
+  {
+  const delComponent=()=>
+  {
+    this.setState({show:false})
+  }
+ 
+    let mycomponet
+    if(this.state.show==true)
+    {
+      mycomponet=<Child/>
+    } 
+    return(
+      <>
+        {mycomponet}
+        <h1>This is App Component</h1>
+        <button onClick={delComponent}>Remove component</button>
+      </>
+    )
+  }
+}
+export default App
+*/
+//------------------------------------ 45. React Events -----------------------
+//--------------onClick onChange onSubmit onBlur  onLoad  ..................
+// react event basic
+/*
+function App()
+{
+  const show=()=>{
+    alert("button clicked")
+  }
+   return(
+      <>
+      <h1>this is function componet </h1>
+      <button onClick={show}>ClickMe</button>
+      </>
+  )
+}
+export default App
+*/
+//------------------------------------ 46. React Events -----------------------
+//--------------onClick onChange onSubmit onBlur  onLoad  ..................
+// react event : argument or parameter passing
+function App()
+{
+  const show=(s,m,e)=>{
+    alert("Event Button:"+e.type)
+    document.getElementById("res").innerHTML="Button Clicked :<br> name:"+s+"<br> Mark:"+m
+  }
+  const dis=(e)=>{
+    alert("Event Text:"+e.type)
+  }
+  const dis2=(e)=>{
+    alert("Event Tex:"+e.type+" cursor move to outside")
+  }
+  const dis3=(e)=>{
+  //  alert("Event Tex:"+e.type+" cursor move to inside")
+    document.getElementById("t1").value="cursor inside"+e.type
+  }
+  
+   return(
+      <>
+      <h1>this is function componet </h1>
+      
+      <input id="t1" type="text" onFocus={(event1)=>dis3(event1)}></input> <br></br>
+      <input type="text" onBlur={(event)=>dis2(event)}></input> <br></br>
+      <input type="text" onChange={(event)=>dis(event)}></input> <br></br>
+      <button onClick={(event)=>show("Gokul",99,event)}>ClickMe</button>
+ 
+      <div id="res"></div>
+      </>
+  )
+}
+export default App
+//----------------------------------React Events---------------------------
+/*
+function Surya()
+{
+  const myfun=()=>
+  {
+  var a=document.getElementById("t1").value
+  document.getElementById("ans").innerHTML=a
+  }
+  const dis1=()=>
+  {
+    //alert("cursor moved to outside")
+    document.getElementById("ans1").innerHTML="cursor moved to outside textbox"
+    
+  }
+  const dis2=()=>
+  {
+    document.getElementById("ans1").innerHTML="cursor moved to inside textbox"
+    
+  }
+  let mydata=""
+  const dis3=()=>
+  {
+    mydata=document.getElementById("t1").value
+    document.getElementById("ans1").innerHTML="you typing ...."+mydata
+    
+  }
+  const overfun=()=>
+  {
+    document.getElementById("b1").style.backgroundColor="green"
+  }
+  const outfun=()=>
+  {
+    document.getElementById("b1").style.backgroundColor="white"
+  }
+  
+  return(
+    <>
+    Enter your text:<input type="text" onChange={dis3} onFocus={dis2} onBlur={dis1} id="t1"></input>
+    
+    <button id="b1" onClick={()=>myfun()} onMouseOut={outfun} onMouseOver={overfun}>ClickMe</button>
+    
+    <div id="ans"></div>
+    <div id="ans1"></div>
+    </>
+  )
+}
+export default Surya
+*/
+//------------------------------------- react looping-----------------------------
+// map method is used to acheive loop-----------------------------------------
+/*
+function Myfun(props)
+{
+  return <li>{props.name}</li>
+}
+function Surya()
+{
+  const myarr=["gokul","pradeep","jaya","surya","ragul","priya","gowthaman"]
+  return(
+    <>
+    /*
+      <h1>{myarr[0]}</h1>
+      <h1>{myarr[1]}</h1>
+      <h1>{myarr[2]}</h1>
+    */
+    /*        {myarr.map((v) => <h2>{v}</h2>)} */
+    /*}
+    <ol type="I">
+    {myarr.map((data)=><Myfun name={data}></Myfun>)}
+  </ol>
+    </>
+  )
+}
+export default Surya*/
+//-------------------------- find event type ----------------------------------
+/*
+function Surya()
+{
+  const myfun=(v)=>
+  {
+    document.getElementById("ans").innerHTML=v.type
+  }
+  const dis=(v)=>
+  {
+    document.getElementById("ans").innerHTML=v.target.value
+  }
+  return(
+    <>
+      <input type="button" value="click me jaya" id="b1" onClick={(event)=>dis(event)} ></input>
+      <button id="b2" onMouseOver={(event)=>myfun(event)} >ClickMe</button>    
+      <input type="text" id="t1" onFocus={(event)=>dis(event)} ></input>
+      <div id="ans"></div>
+    </>
+  )
+}
+export default Surya
+*/
+//---------------------------------------React Form advanced--------------------------------
+/*
+function Surya()
+{
+  return(
+    <form>
+      <label>Enter User Name:
+      <input type="text"></input>
+      </label>
+    </form>
+  )
+}
+export default Surya
+*/
+//---------------------------------- React Form + React Hook (useState) ---------------------
+// header file: import {useState} from 'react'
+// variable declare & define:  const [var1,var2]=useState("value")
+// var1:  default value(inside the setState)              var2: changes value (change useState : default value to user typed value)
+/*
+import { useState } from "react"
+function Surya()
+{
+  const [name,setName]=useState("surya")
+  const [mark,setMark]=useState(100)
+  return(
+    <form>
+      <label>Enter Your Name
+    <input type="text" onChange={(event)=>{setName(event.target.value)}} value={name}></input>
+      </label>
+      <label>Enter Your Mark
+    <input type="text" onChange={(event)=>{setMark(event.target.value)}} value={mark}></input>
+      </label>
+    </form>
+  )
+}
+export default Surya*/
+//-------------------------- react form + hook + submit button + onSubmit event -----------
+/*
+import { useState } from 'react'
+function Surya()
+{
+  const [name,setName]=useState("surya")
+  const [mark,setMark]=useState(100)
+const myfun=(event)=>
+{
+  event.preventDefault()  // don't refresh
+  alert("submit button pressed:"+name+" "+mark)
+}
+  return(
+    <form onSubmit={myfun}>
+      <label>Enter Your Name
+    <input type="text" onChange={(event)=>{setName(event.target.value)}} value={name}></input>
+      </label>
+      <label>Enter Your Mark
+    <input type="text" onChange={(event)=>{setMark(event.target.value)}} value={mark}></input>
+      </label>
+      <input type="submit"></input>
+    </form>
+  )
+}
+export default Surya
+*/
+//----------------------React form (TextArea) + react hook ------------------
+// input type=button ----> in default page does not refresh ----------------
+/*
+import { useState } from 'react'
+function Surya()
+{
+  const[address,setAddress]=useState("default address \nsecond line \nThird Line")
+  const changeAddress=(event)=>
+  {
+    event.preventDefault(); // without refresh
+    alert(address)
+  }  
+return(
+  <form method="get" action="https://www.google.com" target='_blank'>
+    <h1>TextArea - multiline purpose </h1>
+    <label>Enter Your Feedback
+      <textarea rows="5" cols="30" value={address} onChange={(e)=>{setAddress(e.target.value)}}></textarea>
+    </label>
+    <input type="button" onClick={changeAddress} value="clickme"></input>
+    <button onClick={changeAddress}>button</button>
+    <input type="submit" onClick={changeAddress} value="submit button"></input>
+    <input type="submit" value="submit button"></input>
+
+  </form>
+)
+}
+export default Surya
+*/
+import { useState } from 'react'
+function Surya()
+{
+  const[address,setAddress]=useState("namakkal")
+  const changeAddress=(event)=>
+  {
+    setAddress(event.target.value)
+  }  
+  const myfun=(event)=>
+  {
+    event.preventDefault()
+    alert(address)
+  }
+return(
+  <form onSubmit={myfun}>
+        <select value={address} onChange={changeAddress}>
+    <option value="covai">covai</option>
+    <option value="Trichy">Trichy</option>
+    <option value="karur">karur</option>
+    <option value="namakkal">namakkal</option>
+    <option value="salem">salem</option>
+    </select>
+    <input type="submit" value="submit button"></input>
+  </form>
+)
+}
+export default Surya
+import { useState } from 'react'
+function App()
+{
+  const[month,setMonth]=useState("may")
+  return(
+    <>
+        <select size="10"   multiple>
+        <option>january</option>
+        <option>February</option>
+        <option>march</option>
+        <option>april</option>
+        <option>may</option>
+        <option>june</option>
+        <option>july</option>
+        <option>August</option>
+        <option>September</option>
+        </select>
+    </>
+  )  
+}
+export default App
+*/
+// Radio Button Management in React-----------------------------------
+/*
+function App()
+{
+  const show=(event)=>{
+    //alert(event.target.type)
+    //alert(event.type)
+    //alert(event.target.value)
+    if (document.getElementById("g1").checked===true)
+    alert(document.getElementById("g1").value)
+    else if(document.getElementById("g2").checked===true)
+    alert(document.getElementById("g2").value)
+    else if(document.getElementById("g3").checked===true)
+    alert(document.getElementById("g3").value)
+    else
+    alert("please select any one of the option")
+
+  }
+  return(
+    <>
+    <input type="radio" id="g1" name="gen" value="male" /> Male <br></br>
+    <input type="radio" id="g2" name="gen" value="female" /> FeMale <br></br>
+    <input type="radio" id="g3" name="gen" value="others" /> Others <br></br>
+    <input type="button" value="click me" onClick={(event)=>show(event)}></input>
+    </>
+  )
+}
+export default App
+
+*/
+
+// checkbox management
+/*
+function App()
+{
+  const show=(event)=>{
+    event.preventDefault()
+    var ans=" "
+    if (document.getElementById("c1").checked===true)
+      ans=ans+document.getElementById("c1").value+" "
+      if (document.getElementById("c2").checked===true)
+      ans=ans+document.getElementById("c2").value+" "
+      if (document.getElementById("c3").checked===true)
+      ans=ans+document.getElementById("c3").value+" "
+      if (document.getElementById("c4").checked===true)
+      ans=ans+document.getElementById("c4").value+" "
+      if (document.getElementById("c5").checked===true)
+      ans=ans+document.getElementById("c5").value+" "
+      console.log(ans)
+  }
+  const testfun=(event)=>{
+    if(event.target.checked===true && event.target.id==="c5")
+    {
+      document.getElementById("c1").checked=false
+      document.getElementById("c2").checked=false
+      document.getElementById("c3").checked=false
+      document.getElementById("c4").checked=false
+    }
+    if(event.target.checked===true && (event.target.id==="c1" ||event.target.id==="c2" ||event.target.id==="c3" ||event.target.id==="c4")) 
+    document.getElementById("c5").checked=false
+  }
+  return(
+    <form onSubmit={show}>
+    <label>Select Your Language:</label><br></br>
+    <input id="c1" onChange={(event)=>testfun(event)} value="C" type="checkbox" /> C <br></br>
+    <input id="c2" onChange={(event)=>testfun(event)} value="C++" type="checkbox" /> C++ <br></br>
+    <input id="c3" onChange={(event)=>testfun(event)} value="PYTHON" type="checkbox" /> PYTHON <br></br>
+    <input id="c4" onChange={(event)=>testfun(event)} value="JAVA" type="checkbox" /> JAVA <br></br>
+    <input id="c5" onChange={(event)=>testfun(event)} value="None of these above" type="checkbox" /> None of these above <br></br>
+    <input type="submit" value="result"></input>
+    </form>
+  )
+}
+export default App
+*/
+/*
+import React from 'react'
+import { useForm } from 'react-hook-form'
+function App()
+{
+  const { register , handleSubmit } = useForm()
+  const handleRegistration=(data)=> console.log(data)
+return(
+  <form onSubmit={handleSubmit(handleRegistration)}>
+    <label>Enter Name</label>
+    <input name="name" {...register('name')} />
+    <br></br>
+    <label>Email</label>
+    <input type="email" name="email" {...register('email')} />
+  <br></br>
+  <button>submit</button>
+  </form>
+)
+}
+export default App
+*/
+//--------------------------------react list box -----------------------
+//export default function App(){}
+// or
+//function App()
+// or
+/*
+const App=()=>
+{
+  const show=(event)=>
+  {
+      event.preventDefault()
+    var ans="";
+    if (document.getElementById("c1").selected===true)
+    ans=ans+document.getElementById("c1").value
+    if (document.getElementById("c2").selected===true)
+    ans=ans+document.getElementById("c2").value
+    if (document.getElementById("c3").selected===true)
+    ans=ans+document.getElementById("c3").value
+    if (document.getElementById("c4").selected===true)
+    ans=ans+document.getElementById("c4").value
+    if (document.getElementById("c5").selected===true)
+    ans=ans+document.getElementById("c5").value
+    if (document.getElementById("c6").selected===true)
+    ans=ans+document.getElementById("c6").value
+    if (document.getElementById("c7").selected===true)
+    ans=ans+document.getElementById("c7").value
+    alert(ans)
+  }
+return (
+  <form onSubmit={(event)=>show(event)}>
+      <select id="course" size="7" multiple>
+      <option id="c1" value="c">c</option>
+      <option id="c2" value="C++">c++</option>
+      <option id="c3" value="Python programming">python</option>
+      <option id="c4" value="React">react</option>
+      <option id="c5" value="mongo-db">mongodb</option>
+      <option id="c6" value="oracle">oracle</option>
+      <option id="c7" value="sqlserver">sqlserver</option>
+      </select>
+      <input type="submit" value="click me"></input>
+  </form>
+)
+}
+export default App
+
+*/
+// ------------useForm react hooks ------------------------------------
+import { useForm } from "react-hook-form";
+function App()
+{
+  const { register, handleSubmit } = useForm()
+  const myfun=(data)=>{
+    console.log(data)
+  } 
+  return(
+      <form onSubmit={handleSubmit(myfun)}>
+      <h1> Hook Use Form</h1>
+      <input type="text" name="un" {...register("un")} />
+      <br></br>
+      <input type="password" name="pw" {...register("pw")} />
+      <br></br>
+      <input type="text" name="city" {...register("city")} />
+      <input type="submit" value="show all input data" />
+      </form>
+  )
+}
+export default App
