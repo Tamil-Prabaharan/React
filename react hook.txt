@@ -1,0 +1,57 @@
+What are Hooks
+React hooks are like Anchor 
+
+rules:
+Only work with function based components, not with class based components.
+Both arrow and regular function component works
+Cannot nest hooks inside loops, conditions or nested functions
+
+useState()
+def:useState hook provides you with functionality 
+to set state for a variable and 
+automatically update the DOM with the new state
+-------------------------------------------------------
+import React, { useState } from 'react';
+import './App.css';
+
+const App = () => {
+  const [name, setName] = useState('World');
+  return (
+    <div className="App">
+      <h1>Hello, {name}!</h1>
+      <button onClick={() => setName('James')}>
+        Click me to change the name
+      </button>
+    </div>
+  );
+}
+
+export default App;
+------------------------------------------------
+import React, { useState, useEffect } from 'react';
+const App = () => {
+  const [name, setName] = useState('World');
+
+  useEffect(() => {
+    document.title = `Hello, ${name}`;
+  });
+
+  return (
+    <div className="App">
+      <h1>Hello, {name}!</h1>
+      <button onClick={() => setName('James')}>
+        Click me to change the name
+      </button>
+    </div>
+  );
+}
+---------------------------------------
+Check out the tutorials of other hooks:
+
+useReducer
+useRef
+useState
+setInterval
+setTimeout
+useContext
+setState
